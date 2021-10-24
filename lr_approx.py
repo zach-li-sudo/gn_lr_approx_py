@@ -1,11 +1,9 @@
+import cv2
 import numpy as np
 
-from PIL import Image
+img = cv2.imread('spd.jpg', cv2.IMREAD_GRAYSCALE)
+print('Image Dimensions: ', img.shape)
 
-image = Image.open('./icon-py.png')
-# summarize some details about the image
-print(image.format)
-print(image.size)
-print(image.mode)
-# show the image
-# load_image.show()
+# cv2.imshow('Example-show img in window', img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
